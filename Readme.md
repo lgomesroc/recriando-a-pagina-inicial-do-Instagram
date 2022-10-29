@@ -2,7 +2,9 @@
 
 Desafio da Dio.
 
-Confira aqui a página aqui
+Confira aqui a página  [aqui.](https://lgomesroc.github.io/recriando-a-pagina-do-instagram)</br>
+
+
 
 
 ## Visite meu blog e meu perfil no LinkedIn:
@@ -14,4 +16,4 @@ Confira aqui a página aqui
 ## Tecnologias usadas:
 <div style="display: inline_block"></br>
    
-</div>,/br>
+</div></br>
