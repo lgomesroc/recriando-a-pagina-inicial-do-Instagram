@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Instagram</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">  
+</head>
+<body>
+    <div class="dark-button">
+        <button onclick="darkMode()">Modo escuro</button>
+    </div>
+    <main class="main-content">
+        <div class="instagram-wrapper">
+            <div class="instagram-phone">
+                <img 
+                    src="./img/instagram-phone.png" 
+                    alt="Smartphone acessando Instagram"
+                >
+            </div>
+            <div class="instagram-login">
+                <div class="group">
+                    <img 
+                        id="instagram-logo"
+                        src="./img/instagram-logo.png"
+                        alt="Logo do Instagram"
+                    >
+                    <div class="profile-photo">
+                        <img
+                            src="./img/profile-photo.png"
+                            alt="Foto de perfil do usuário"
+                        >
+                    </div>
+                    <a href="#" class="instagram-continue">Continuar como lucaxfelis</a>
+                    <a href="#" class="instagram-remove">Remover conta</a>
+                </div>
+                <div class="group">
+                    <p class="not-account">Não é lucaxfelis?</p>
+                    <p class="not-account"><a href="">Trocar de conta</a> ou <a href="">Cadastre-se</a></p>
+                </div>
+                <div class="get-the-app">
+                    <p class="get-app dark-getapp">Obtenha o aplicativo.</p>
+                    <div class="stores">
+                        <a
+                            href="https://apps.apple.com/app/instagram/id389801252?vt=lo"
+                            target="_blank"
+                        >
+                            <img src="./img/app-store-button.png" alt="Botão para App Store">
+                        </a>
+                        <a 
+                            href="https://play.google.com/store/apps/details?id=com.instagram.android"
+                            target="_blank"
+                        >
+                            <img src="./img/google-play-button.png" alt="Botão para Google Play">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <nav id="nav">
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="https://about.instagram.com/">Sobre</a>
+                </li>
+                <li>
+                    <a href="https://about.instagram.com/blog/">Blog</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/about/jobs/">Carreiras</a>
+                </li>
+                <li>
+                    <a href="https://help.instagram.com/">Ajuda</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/developer/">API</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/legal/privacy/">Privacidade</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/legal/terms/">Termos</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/directory/profiles/">Contas mais relevantes</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/directory/hashtags/">Hashtags</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/explore/locations/">Localizações</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/topics/beauty/">Beleza</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/topics/dance-and-performance/">Dança e apresentação</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/topics/fitness/">Fitness</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/topics/food-and-drink/">Comida e bebida</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/topics/home-and-garden/">Casa e jardim</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/topics/music/">Música</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/topics/visual-arts/">Artes visuais</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <footer>
+        <div class="custom-select">
+            <select name="idioma" id="idioma">
+                <option value="portugues">Português (Brasil)</option>
+                <option value="ingles">Inglês (EUA)</option>
+                <option value="espanhol">Espanhol</option>
+            </select>
+        </div>
+        <p>© 2020 Instagram do Facebook</p>
+    </footer>
+    <script>
+        function darkMode() {
+            var bodyElement = document.body;
+            bodyElement.classList.toggle("dark-bg");
+            var mainContentElement = document.getElementsByClassName("main-content")[0];
+            mainContentElement.classList.toggle("dark-bg");
+            var firstGroupElement = document.getElementsByClassName("group")[0];
+            var secondGroupElement = document.getElementsByClassName("group")[1];
+            firstGroupElement.classList.toggle("dark-group");
+            secondGroupElement.classList.toggle("dark-group");
+            var imgLogo = document.getElementById("instagram-logo");
+            imgLogo.classList.toggle("invert");
+            var navElement = document.getElementById("nav");
+            navElement.classList.toggle("dark-bg");
+            var idiomaElement = document.getElementById("idioma");
+            idiomaElement.classList.toggle("dark-bg");
+        }   
+    </script>
+</body>
+</html>

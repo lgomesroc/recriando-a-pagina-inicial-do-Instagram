@@ -1,0 +1,264 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.dark-button {
+    float: right;
+    margin-top: 16px;
+    margin-right: 32px;
+}
+
+.dark-button button {
+    color: #ffffff;
+    font-weight: 700;
+    background-color: #0095f6;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    padding: 5px 9px;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+.main-content {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fafafa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.dark-bg {
+    background-color: #131c21; !important
+}
+
+.instagram-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    max-width: 935px;
+    height: 100vh;
+}
+
+.instagram-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+}
+
+.instagram-phone img {
+    width: 280px;
+}
+
+.instagram-login {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 280px;
+    height: 40rem;
+}
+
+.instagram-login a {
+    letter-spacing: 0.6px;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 350px;
+    padding: 1.3rem 0;
+    border: 1px solid #dbdbdb;
+}
+
+.dark-group {
+    background-color: #262d31;
+    border: 1px solid #dbdbdb;
+}
+
+.group:nth-child(1) {
+    min-height: 19rem;
+}
+
+#instagram-logo {
+    width: 175px;
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid rgb(239, 239, 239);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-photo img {
+    width: 84px;
+}
+
+.instagram-continue {
+    color: #ffffff;
+    font-weight: 700;
+    background-color: #0095f6;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    padding: 5px 9px;
+}
+
+.instagram-remove {
+    color: #0095f6;
+    font-weight: 600;
+}
+
+.not-account {
+    color: rgb(142, 142, 142);
+    margin-bottom: 4px;
+}
+
+.not-account a {
+    color: rgb(0, 149, 246);
+    font-weight: 700;
+}
+
+.get-the-app {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.get-app {
+    margin: 10px 20px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.dark-getapp {
+    color: #9fa2a5;
+}
+
+.stores {
+    margin: 10px 0px;
+}
+
+.stores img {
+    border: 1px solid rgb(0, 55, 107);
+    border-radius: 4px;
+    width: 8rem;
+}
+
+.group:nth-child(3) {
+    align-items: center;
+}
+
+.container {
+    margin: auto;
+    width: 60%;
+}
+
+nav {
+    margin-top: 32px;
+    background-color: #fafafa;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 18px;
+}
+
+nav a {
+    font-size: 13px;
+    letter-spacing: 0.3px;
+    padding: 8px;
+    color: rgb(142, 142, 142);
+}
+
+footer {
+    padding: 15px 0px 50px 0px;
+    margin: auto;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer p {
+    float: right;
+    font-size: 13px;
+    letter-spacing: 0.3px;
+    padding: 8px;
+    color: rgb(142, 142, 142);
+    display: block;
+}
+
+footer select {
+    color: rgb(142, 142, 142);
+    font-size: 13px;
+    letter-spacing: 0.3px;
+    background-color: #fafafa;
+    border: none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    appearance:none;
+}
+
+/* media queries */
+
+@media (max-width: 1024px) {
+    .instagram-wrapper {
+        width: 100%;
+    }
+}
+
+@media (max-width: 780px) {
+    .instagram-phone {
+        display: none;
+    }
+
+    .instagram-wrapper {
+        width: 90%;
+    }
+
+    footer {
+        width: 80%;
+    }
+
+    nav {
+        display: none;
+    }
+
+}
+
+@media (max-width: 440px) {
+    
+    footer {
+        width: 90%;
+    }
+
+    nav {
+        display: none;
+    }
+}
